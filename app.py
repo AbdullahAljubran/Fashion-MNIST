@@ -54,7 +54,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 pca_model = joblib.load("pca_model.pkl")
-kmeans_model = joblib.load("kmeans_model.pkl")
+kmeans_model = joblib.load("kmeans_model10.pkl")
 dbscan_model = joblib.load("dbscan_model.pkl")
 
 st.title("Image Clustering using PCA, KMeans, and DBSCAN")
