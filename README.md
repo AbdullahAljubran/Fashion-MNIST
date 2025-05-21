@@ -13,6 +13,7 @@ Majed Alsarawani
 Jana Almalki
 
 Features
+
 🖼️ Image upload functionality (supports PNG, JPG, JPEG)
 
 🎨 Custom styled interface with responsive design
