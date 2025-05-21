@@ -1,83 +1,91 @@
 # Fashion-MNIST
 
-## Team Members
-- Hussah Almuzaini  
-- Abdullah Aljubran  
-- Majed Alsarawani  
-- Jana Almalki  
+Project Description
+This web application performs image clustering using machine learning techniques. It utilizes Principal Component Analysis (PCA) for dimensionality reduction, followed by both K-Means and DBSCAN clustering algorithms to classify uploaded images. The application provides a user-friendly interface built with Streamlit that displays the clustering results in an elegant format.
 
-## 📌 Description
-This web application performs image clustering on Fashion-MNIST-like data using **Principal Component Analysis (PCA)**, **K-Means**, and **DBSCAN** algorithms. Users can upload an image, and the system will:
+Team Members
+Hussah Almuzaini
 
-- ✅ Preprocess the image (convert to grayscale, resize, and flatten)  
-- ✅ Apply PCA for dimensionality reduction  
-- ✅ Perform clustering using both K-Means and DBSCAN  
-- ✅ Display the results in a clean, responsive web interface  
+Abdullah Aljubran
 
----
+Majed Alsarawani
 
-## ⚙️ Requirements
+Jana Almalki
 
-To run this application, you'll need:
+Features
+🖼️ Image upload functionality (supports PNG, JPG, JPEG)
 
-- Python 3.7+
-- Streamlit  
-- OpenCV (`opencv-python`)  
-- NumPy  
-- scikit-learn  
-- Joblib  
-- Pillow (`PIL`)  
+🎨 Custom styled interface with responsive design
+
+🔍 Dual clustering with both K-Means and DBSCAN algorithms
+
+📊 Clear visualization of clustering results
+
+⚡ Fast processing with pre-trained models
+
+Requirements
+To run this application, you need:
+   ```bach
+   Python 3.7+
+   streamlit==1.22.0
+   opencv-python==4.7.0.72
+   numpy==1.24.3
+   scikit-learn==1.2.2
+   joblib==1.2.0
+   Pillow==9.5.0
+```
 
 ---
 
 ## 🛠️ Installation
 
-1. **Clone the repository:**
+**Clone the repository:**
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
-
-   Install the required packages:
-
-bash
-Copy
-Edit
+```
+Install the required packages:
+```
 pip install streamlit opencv-python numpy scikit-learn joblib pillow
-▶️ How to Run
-Make sure you have the following model files in the same directory as app.py:
+```
 
-pca_model.pkl
 
-kmeans_model10.pkl
-
-dbscan_model.pkl
-
-Then, run the app using Streamlit:
-
-bash
-Copy
-Edit
+Usage
+Run the application:
+```
 streamlit run app.py
-The app will automatically open in your default web browser.
+```
+The application will open in your default web browser at http://localhost:8501
 
-🚀 Usage
-Click on "Browse files" or drag and drop an image (PNG, JPG, JPEG).
+Upload an image using the file uploader
 
-The uploaded image will be displayed in a styled frame.
+View the results:
 
-View clustering results from both K-Means and DBSCAN:
+Your uploaded image displayed in a styled frame
 
-K-Means will always assign a cluster label.
+K-Means cluster assignment
 
-DBSCAN might classify the image as an outlier (cluster -1).
+DBSCAN cluster assignment (or outlier detection)
 
-✨ Features
-🖼️ Clean, responsive interface with custom styling
+How It Works
+Image Processing:
 
-🧠 Automatic image preprocessing
+Converts image to grayscale
 
-📊 Clustering results displayed in a user-friendly format
+Resizes to 28x28 pixels
 
-🌐 Supports multiple image formats
+Flattens and normalizes pixel values
 
+Dimensionality Reduction:
 
+Uses PCA to reduce features while preserving variance
+
+Clustering:
+
+K-Means: Assigns to nearest cluster centroid
+
+DBSCAN: Density-based clustering that can identify outliers
+
+Results Display:
+
+Presents both clustering results in formatted boxes
