@@ -51,42 +51,42 @@ pip install streamlit opencv-python numpy scikit-learn joblib pillow
 ```
 
 
-Usage
-Run the application:
+## Usage
+1- Run the application:
 ```
 streamlit run app.py
 ```
-The application will open in your default web browser at http://localhost:8501
+2- The application will open in your default web browser at http://localhost:8501
 
-Upload an image using the file uploader
+3- Upload an image using the file uploader
 
-View the results:
+4- View the results:
 
-Your uploaded image displayed in a styled frame
+* Your uploaded image displayed in a styled frame
 
-K-Means cluster assignment
+* K-Means cluster assignment
 
-DBSCAN cluster assignment (or outlier detection)
+* DBSCAN cluster assignment (or outlier detection)
 
-How It Works
-Image Processing:
+## How It Works
+1- Image Processing:
 
-Converts image to grayscale
+* Converts image to grayscale
 
-Resizes to 28x28 pixels
+* Resizes to 28x28 pixels
 
-Flattens and normalizes pixel values
+* Flattens and normalizes pixel values
 
-Dimensionality Reduction:
+2- Dimensionality Reduction:
 
-Uses PCA to reduce features while preserving variance
+* Uses PCA to reduce features while preserving variance
 
-Clustering:
+3- Clustering:
 
-K-Means: Assigns to nearest cluster centroid
+* K-Means: Assigns to nearest cluster centroid
 
-DBSCAN: Density-based clustering that can identify outliers
+* DBSCAN: Density-based clustering that can identify outliers
 
-Results Display:
+4- Results Display:
 
-Presents both clustering results in formatted boxes
+* Presents both clustering results in formatted boxes
