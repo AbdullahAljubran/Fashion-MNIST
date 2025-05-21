@@ -1,7 +1,7 @@
 # Fashion-MNIST
 
 Project Description
-This web application performs image clustering using machine learning techniques. It utilizes Principal Component Analysis (PCA) for dimensionality reduction, followed by both K-Means and DBSCAN clustering algorithms to classify uploaded images. The application provides a user-friendly interface built with Streamlit that displays the clustering results in an elegant format.
+This web application performs image clustering using machine learning techniques. It utilizes Principal Component Analysis (PCA) for dimensionality reduction, with using K-Means clustering algorithm to classify uploaded images. The application provides a user-friendly interface built with Streamlit that displays the clustering results in an elegant format.
 
 Team Members
 Hussah Almuzaini
@@ -18,7 +18,7 @@ Features
 
 🎨 Custom styled interface with responsive design
 
-🔍 Dual clustering with both K-Means and DBSCAN algorithms
+🔍 Dual clustering with K-Means algorithm
 
 📊 Clear visualization of clustering results
 
@@ -66,8 +66,6 @@ streamlit run app.py
 
 * K-Means cluster assignment
 
-* DBSCAN cluster assignment (or outlier detection)
-
 ## How It Works
 1- Image Processing:
 
@@ -85,8 +83,6 @@ streamlit run app.py
 
 * K-Means: Assigns to nearest cluster centroid
 
-* DBSCAN: Density-based clustering that can identify outliers
-
 4- Results Display:
 
-* Presents both clustering results in formatted boxes
+* Presents clustering result
