@@ -1,3 +1,4 @@
+%%writefile app.py
 import streamlit as st
 import numpy as np
 import cv2
@@ -74,7 +75,8 @@ if uploaded_file is not None:
 
     
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    resized = cv2.resize(gray, (28, 28))
+    _, bw = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
+    resized = cv2.resize(bw, (28, 28))
     flat = resized.flatten() / 255.0
     flat = flat.reshape(1, -1)
 
